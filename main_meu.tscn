@@ -110,7 +110,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_qjylt")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_crdpq")
 text = "Start Game"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Options button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -159,6 +159,16 @@ text = "Game Name"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+<<<<<<< Updated upstream
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+=======
+<<<<<<< HEAD
+[connection signal="pressed" from="VBoxContainer/Options button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options button" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit button" to="." method="_on_exit_button_pressed"]
+=======
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+>>>>>>> 9d022e1a235e7afddd8b276b0a6408ca33b2e56a
+>>>>>>> Stashed changes
 [connection signal="pressed" from="VBoxContainer/Exit button" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit button" to="." method="_on_exit_button_pressed"]
