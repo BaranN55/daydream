@@ -15,6 +15,10 @@ offset_bottom = 40.0
 
 [node name="Chapter1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Chapter 1"
 
 [node name="Chapter2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+text = "Chapter 2"
