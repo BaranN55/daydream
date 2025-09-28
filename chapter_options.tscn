@@ -1,4 +1,39 @@
-[gd_scene format=3 uid="uid://b4ap1nw2c0xcf"]
+[gd_scene load_steps=9 format=3 uid="uid://b4ap1nw2c0xcf"]
+
+[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
+[ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Spring Leaves.ttf" id="2_tlci5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8f2j0"]
+texture = ExtResource("1_k1e4b")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yma5j"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.03137255, 0.015686275, 0, 1)
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5ta7"]
+bg_color = Color(0.45840502, 0.45840508, 0.45840502, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hk6hh"]
+bg_color = Color(0.74558026, 0.7455802, 0.7455802, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0udu1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_alser"]
 
 [node name="Chapter options" type="Control"]
 layout_mode = 3
@@ -8,17 +43,93 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_8f2j0")
 
-[node name="Chapter1" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
-text = "Chapter 1"
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -364.5
+offset_top = -80.5
+offset_right = 395.0
+offset_bottom = 154.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
 
-[node name="Chapter2" type="Button" parent="VBoxContainer"]
+[node name="Chapter1" type="Button" parent="HBoxContainer"]
 layout_mode = 2
-text = "Chapter 2"
+size_flags_horizontal = 7
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tlci5")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_yma5j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
+text = "1"
+
+[node name="Chapter2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tlci5")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_yma5j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
+text = "2"
+
+[node name="Chapter3" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tlci5")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_yma5j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
+text = "3
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -428.0
+offset_top = 47.0
+offset_right = 474.0
+offset_bottom = 235.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = ExtResource("2_tlci5")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_alser")
+text = "Select A Chapter"
