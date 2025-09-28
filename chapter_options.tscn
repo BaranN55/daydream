@@ -1,7 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4ap1nw2c0xcf"]
+[gd_scene load_steps=12 format=3 uid="uid://b4ap1nw2c0xcf"]
 
 [ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
 [ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Spring Leaves.ttf" id="2_tlci5"]
+[ext_resource type="Script" uid="uid://c214u86l2sxph" path="res://chapter_1.gd" id="3_yma5j"]
+[ext_resource type="Script" uid="uid://b5y6qxemersip" path="res://chapter_2.gd" id="4_s5ta7"]
+[ext_resource type="Script" uid="uid://d2ykrguty7aak" path="res://chapter_3.gd" id="5_hk6hh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8f2j0"]
 texture = ExtResource("1_k1e4b")
@@ -88,6 +91,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
 text = "1"
+script = ExtResource("3_yma5j")
 
 [node name="Chapter2" type="Button" parent="HBoxContainer"]
 layout_mode = 2
@@ -104,6 +108,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
 text = "2"
+script = ExtResource("4_s5ta7")
 
 [node name="Chapter3" type="Button" parent="HBoxContainer"]
 layout_mode = 2
@@ -120,6 +125,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
 text = "3"
+script = ExtResource("5_hk6hh")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -138,3 +144,8 @@ theme_override_fonts/font = ExtResource("2_tlci5")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxEmpty_alser")
 text = "Select A Chapter"
+
+[connection signal="pressed" from="HBoxContainer/Chapter1" to="HBoxContainer/Chapter1" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter1" method="_on_chapter_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter2" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Chapter3" to="HBoxContainer/Chapter3" method="_on_pressed"]
