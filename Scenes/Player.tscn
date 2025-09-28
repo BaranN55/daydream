@@ -27,6 +27,7 @@ radius = 25.0
 height = 162.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_44cfe")
 
 [node name="Player" type="AnimatedSprite2D" parent="."]
