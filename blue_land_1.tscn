@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dioerrfqc2rac" path="res://assets/Blue Land 1.png" id="1_6hx2q"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
-size = Vector2(101.14705, 298.1176)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6hx2q"]
+size = Vector2(104.36216, 305.21008)
 
 [node name="Blue Land 1" type="AnimatableBody2D"]
 
@@ -14,6 +14,6 @@ scale = Vector2(0.5078469, 0.5078469)
 texture = ExtResource("1_6hx2q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-41.5, 15)
+position = Vector2(-41.5, 15.5)
 scale = Vector2(0.5078469, 0.5078469)
-shape = SubResource("RectangleShape2D_s8bxr")
+shape = SubResource("RectangleShape2D_6hx2q")

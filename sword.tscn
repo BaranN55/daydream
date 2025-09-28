@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb8m45kcmgv36"]
+
+[ext_resource type="Texture2D" uid="uid://cl8le40vmeywr" path="res://assets/553296528_1433832064583355_5350619851167897209_n.png" id="1_74bdg"]
+[ext_resource type="Script" uid="uid://b0la8j20esuwg" path="res://sword.gd" id="1_e4ynd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74bdg"]
+size = Vector2(71, 90)
+
+[node name="Sword" type="Area2D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_e4ynd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-11.5, -12.022724)
+scale = Vector2(1.2613636, 1.2613636)
+texture = ExtResource("1_74bdg")
+region_enabled = true
+region_rect = Rect2(404, 70.5, 88, 92)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-15.5, -14)
+shape = SubResource("RectangleShape2D_74bdg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
