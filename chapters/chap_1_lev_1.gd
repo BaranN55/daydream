@@ -1,4 +1,5 @@
 extends Node2D
+$CanvasLayer/Control.visible = false
 
-func _on_pressed():
-	$CanvasLayer.visible = true
+func _on_riddle_pressed():
+	$CanvasLayer/Control.visible = true

@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://buegcxlxet8p3"]
+[gd_scene load_steps=9 format=3 uid="uid://buegcxlxet8p3"]
 
 [ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
 [ext_resource type="Script" uid="uid://bonseqod31lrh" path="res://chapters/chap_1_lev_1.gd" id="1_e3j3b"]
 [ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="2_5gvhy"]
 [ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="2_wxanj"]
 [ext_resource type="FontFile" uid="uid://dbscr3a6lxcxi" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="3_kg6q3"]
-[ext_resource type="Script" uid="uid://xdm8teun6u1" path="res://chapters/riddle.gd" id="6_wxanj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3j3b"]
 texture = ExtResource("2_wxanj")
@@ -172,6 +171,7 @@ layer = 5
 visible = false
 
 [node name="Control" type="Control" parent="MainCanvas"]
+visible = false
 z_index = 4
 layout_mode = 3
 anchors_preset = 0
@@ -240,12 +240,11 @@ offset_right = 2261.0
 offset_bottom = 13.0
 text = "Stack"
 
-[node name="Riddle" type="Button" parent="."]
-offset_left = 1987.0
-offset_top = -156.0
-offset_right = 2270.0
-offset_bottom = -83.0
-text = "START LEVEL 1"
-script = ExtResource("6_wxanj")
+[node name="riddle" type="Button" parent="."]
+offset_left = 2109.0
+offset_top = -234.0
+offset_right = 2451.0
+offset_bottom = -130.0
+text = "GO TO LEVEL 1"
 
-[connection signal="pressed" from="Riddle" to="." method="_on_riddle_pressed"]
+[connection signal="pressed" from="riddle" to="." method="_on_riddle_pressed"]
