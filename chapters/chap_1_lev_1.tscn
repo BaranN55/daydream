@@ -1,3 +1,31 @@
-[gd_scene format=3 uid="uid://buegcxlxet8p3"]
+[gd_scene load_steps=4 format=3 uid="uid://buegcxlxet8p3"]
+
+[ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gvhy"]
+texture = ExtResource("1_3a7yl")
+texture_region_size = Vector2i(50, 50)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kg6q3"]
+sources/2 = SubResource("TileSetAtlasSource_5gvhy")
 
 [node name="Chap1lev1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_kg6q3")
+format = 2
+layer_0/tile_data = PackedInt32Array(196611, 2, 0, 196614, 2, 0, 196617, 2, 0, 196620, 2, 0, 196623, 2, 0, 196608, 2, 0, 262141, 2, 0, 262138, 2, 0, 262135, 2, 0, 262132, 2, 0, 262129, 2, 0, 262126, 2, 0, 262123, 2, 0, 458731, 2, 1, 458737, 2, 1, 655342, 2, 1, 655339, 2, 2, 458734, 2, 2, 655345, 2, 2, 458740, 2, 1, 655348, 2, 2, 458743, 2, 2, 655351, 2, 1, 458746, 2, 1, 655354, 2, 2, 458749, 2, 1, 655357, 2, 2, 393216, 2, 2, 589824, 2, 1, 393219, 2, 1, 589827, 2, 2, 393222, 2, 1, 589830, 2, 2, 393225, 2, 2, 589833, 2, 1, 393228, 2, 1, 589836, 2, 2, 393231, 2, 1, 589839, 2, 2, 393234, 2, 2, 589842, 2, 1, 393237, 2, 1, 589845, 2, 2, 196626, 2, 0, 196629, 2, 0)
