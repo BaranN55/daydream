@@ -5,7 +5,7 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o7wh8"]
 texture = ExtResource("2_xsqy4")
-modulate_color = Color(0.3779188, 0.37791887, 0.37791884, 1)
+modulate_color = Color(0.74558026, 0.7455802, 0.74558014, 1)
 
 [sub_resource type="FontFile" id="FontFile_crdpq"]
 subpixel_positioning = 0
