@@ -32,6 +32,6 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_collision_shape_2d_body_entered() -> void:
-	if character.is_in_group("Player"):  # or check if body.name == "Player"
+	if character.is_in_group("character"):  # or check if body.name == "Player"
 		$CanvasLayer.visible = true
 		get_tree().paused = true
