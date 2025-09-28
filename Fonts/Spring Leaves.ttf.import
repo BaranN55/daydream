@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dfe5ixv61d87y"
-path="res://.godot/imported/Spring Leaves.ttf-f0df5e4081b8876b1ea7784b39aa75e4.fontdata"
+path="res://.godot/imported/Spring Leaves.ttf-543daee46e98f8a7420dc0a1a1ebff82.fontdata"
 
 [deps]
 
-source_file="res://Spring Leaves.ttf"
-dest_files=["res://.godot/imported/Spring Leaves.ttf-f0df5e4081b8876b1ea7784b39aa75e4.fontdata"]
+source_file="res://Fonts/Spring Leaves.ttf"
+dest_files=["res://.godot/imported/Spring Leaves.ttf-543daee46e98f8a7420dc0a1a1ebff82.fontdata"]
 
 [params]
 

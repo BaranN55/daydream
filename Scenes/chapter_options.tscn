@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://b4ap1nw2c0xcf"]
 
-[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
-[ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Spring Leaves.ttf" id="2_tlci5"]
+[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://Menu Backgrounds/ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
+[ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Fonts/Spring Leaves.ttf" id="2_tlci5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8f2j0"]
 texture = ExtResource("1_k1e4b")

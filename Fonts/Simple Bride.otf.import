@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dbscr3a6lxcxi"
-path="res://.godot/imported/FinolaLaoiseDemoRegular.ttf-d99d11e9494df72191d6841d8e4d722f.fontdata"
+uid="uid://d2cpnni1gotyp"
+path="res://.godot/imported/Simple Bride.otf-e21adb5b054dbf4e85b39b43aef28c87.fontdata"
 
 [deps]
 
-source_file="res://FinolaLaoiseDemoRegular.ttf"
-dest_files=["res://.godot/imported/FinolaLaoiseDemoRegular.ttf-d99d11e9494df72191d6841d8e4d722f.fontdata"]
+source_file="res://Fonts/Simple Bride.otf"
+dest_files=["res://.godot/imported/Simple Bride.otf-e21adb5b054dbf4e85b39b43aef28c87.fontdata"]
 
 [params]
 
