@@ -3,17 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://bdontv41tyu77" path="res://assets/platform image.png" id="1_mi635"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
-size = Vector2(505.73523, 218.26468)
+size = Vector2(649.47046, 218.26468)
 
 [node name="Platform" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-41.093933, 15)
-scale = Vector2(0.18784532, 0.18784532)
+position = Vector2(-28.080118, 15)
+scale = Vector2(0.23391192, 0.18784532)
 texture = ExtResource("1_mi635")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-40.499996, 22.5)
+position = Vector2(-26.999998, 22.5)
 scale = Vector2(0.18784532, 0.18784532)
 shape = SubResource("RectangleShape2D_s8bxr")
 one_way_collision = true
