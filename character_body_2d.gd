@@ -4,6 +4,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 @onready var anim: AnimatedSprite2D = $Player
+@onready var character: CharacterBody2D = $"."
 
 
 func _physics_process(delta: float) -> void:
@@ -29,6 +30,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_triggrezone_area_entered(area: Area2D) -> void:
+	print ('test')
 
 
 func _on_collision_shape_2d_body_entered() -> void:
