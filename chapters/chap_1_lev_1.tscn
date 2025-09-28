@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://buegcxlxet8p3"]
 
 [ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
-[ext_resource type="PackedScene" uid="uid://d30ebo7uakvax" path="res://Scenes/Player.tscn" id="2_5gvhy"]
+[ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="2_5gvhy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gvhy"]
 texture = ExtResource("1_3a7yl")
@@ -38,9 +38,10 @@ sources/2 = SubResource("TileSetAtlasSource_5gvhy")
 [node name="Chap1lev1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, -3)
 tile_set = SubResource("TileSet_kg6q3")
 format = 2
-layer_0/tile_data = PackedInt32Array(196611, 2, 0, 196614, 2, 0, 196617, 2, 0, 196620, 2, 0, 196623, 2, 0, 196608, 2, 0, 262141, 2, 0, 262138, 2, 0, 262135, 2, 0, 262132, 2, 0, 262129, 2, 0, 262126, 2, 0, 262123, 2, 0, 458731, 2, 1, 458737, 2, 1, 655342, 2, 1, 655339, 2, 2, 458734, 2, 2, 655345, 2, 2, 458740, 2, 1, 655348, 2, 2, 458743, 2, 2, 655351, 2, 1, 458746, 2, 1, 655354, 2, 2, 458749, 2, 1, 655357, 2, 2, 393216, 2, 2, 589824, 2, 1, 393219, 2, 1, 589827, 2, 2, 393222, 2, 1, 589830, 2, 2, 393225, 2, 2, 589833, 2, 1, 393228, 2, 1, 589836, 2, 2, 393231, 2, 1, 589839, 2, 2, 393234, 2, 2, 589842, 2, 1, 393237, 2, 1, 589845, 2, 2, 196626, 2, 0, 196629, 2, 0)
+layer_0/tile_data = PackedInt32Array(196611, 2, 0, 196614, 2, 0, 196617, 2, 0, 196620, 2, 0, 196623, 2, 0, 196608, 2, 0, 262141, 2, 0, 262138, 2, 0, 262135, 2, 0, 262132, 2, 0, 262129, 2, 0, 262126, 2, 0, 262123, 2, 0, 458731, 2, 1, 458737, 2, 1, 655342, 2, 1, 655339, 2, 2, 458734, 2, 2, 655345, 2, 2, 458740, 2, 1, 655348, 2, 2, 458743, 2, 2, 655351, 2, 1, 458746, 2, 1, 655354, 2, 2, 458749, 2, 1, 655357, 2, 2, 393216, 2, 2, 589824, 2, 1, 393219, 2, 1, 589827, 2, 2, 393222, 2, 1, 589830, 2, 2, 393225, 2, 2, 589833, 2, 1, 393228, 2, 1, 589836, 2, 2, 393231, 2, 1, 589839, 2, 2, 393234, 2, 2, 589842, 2, 1, 393237, 2, 1, 589845, 2, 2, 196626, 2, 0, 196629, 2, 0, 655336, 2, 2, 458728, 2, 1, 458725, 2, 2, 655333, 2, 1, 458722, 2, 1, 655330, 2, 2, 262120, 2, 0, 262117, 2, 0, 262114, 2, 0, 196632, 2, 0, 196635, 2, 0, 393240, 2, 1, 589848, 2, 1, 393243, 2, 1, 589851, 2, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_5gvhy")]
 position = Vector2(2, -67)
@@ -50,3 +51,38 @@ position = Vector2(-17, -1)
 zoom = Vector2(1.2, 1.2)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+
+[node name="Sacrimenu1" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="Sacrimenu1"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Sacrimenu1/Control"]
+layout_mode = 0
+offset_left = -174.0
+offset_top = -218.0
+offset_right = 169.0
+offset_bottom = 100.0
+
+[node name="Label" type="Label" parent="Sacrimenu1/Control"]
+layout_mode = 0
+offset_left = -146.0
+offset_top = -139.0
+offset_right = 146.0
+offset_bottom = 4.0
+text = "Here you need to sacrifice in order to 
+boost your speed or else you will run 
+out of time."
+
+[node name="sacri" type="Button" parent="Sacrimenu1/Control"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="skip" type="Button" parent="Sacrimenu1/Control"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
