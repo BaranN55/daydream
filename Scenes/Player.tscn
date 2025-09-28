@@ -47,6 +47,7 @@ collision_layer = 2
 script = ExtResource("1_44cfe")
 
 [node name="Player" type="AnimatedSprite2D" parent="."]
+z_index = 5
 sprite_frames = SubResource("SpriteFrames_h4qhm")
 animation = &"Normal Idle"
 autoplay = "Normal Idle"

@@ -2,9 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
 [ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="2_5gvhy"]
+[ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="2_dcpis"]
 [ext_resource type="FontFile" uid="uid://dbscr3a6lxcxi" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="3_kg6q3"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gvhy"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p54j5"]
 texture = ExtResource("1_3a7yl")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
@@ -31,13 +32,54 @@ texture_region_size = Vector2i(50, 50)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25.17183, -24.215937, 24.809715, -24.809713, 24.59208, 24.592083, -25.027344, 25.02734)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxanj"]
+texture = ExtResource("2_dcpis")
+texture_region_size = Vector2i(50, 50)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+0:3/0 = 0
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+3:2/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+6:1/size_in_atlas = Vector2i(2, 1)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.338585, -9.249237, 33.51487, -8.81398, 37.649834, -6.420059, 36.344048, 8.596344, 21.54528, 18.17202, -18.06321, 18.389648, -31.773842, 8.161087, -35.038277, -2.067482)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(25.244972, -24.91853, 24.156822, 25.571411, -25.027344, 25.136154, -24.809715, -25.35379)
+4:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_kg6q3"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
 sources/2 = SubResource("TileSetAtlasSource_5gvhy")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kg6q3"]
-size = Vector2(160, 386.5)
 
 [node name="Chap1lev1" type="Node2D"]
 
