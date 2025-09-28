@@ -1,5 +1,6 @@
 extends Node2D
-$CanvasLayer/Control.visible = false
 
-func _on_riddle_pressed():
-	$CanvasLayer/Control.visible = true
+
+
+func _on_riddle_pressed() -> void:
+	get_tree().change_scene_to_file("res://tomriddle.tscn")

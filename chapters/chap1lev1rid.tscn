@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8sbvhjmnh3wl"]
+
+[ext_resource type="Script" uid="uid://grw7jrcs8g0j" path="res://chapters/chap_1_lev_1_rid.gd" id="1_7ikwj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7ikwj")
+
+[node name="MainCanvas" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Control" type="Control" parent="MainCanvas"]
+z_index = 4
+layout_mode = 3
+anchors_preset = 0
+offset_left = 41.0
+offset_top = -74.0
+offset_right = 81.0
+offset_bottom = -34.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 1817.0
+offset_top = -212.0
+offset_right = 2334.0
+offset_bottom = 36.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 1824.0
+offset_top = -199.0
+offset_right = 2326.0
+offset_bottom = -72.0
+text = "I’m not a magician, but I can make things appear out of nowhere.
+I’m not a librarian, yet I store millions of items.
+You can’t see me working, but without me, your code is broken.
+I exist in RAM, and I vanish when power is gone.
+What am I?"
+metadata/_edit_use_anchors_ = true
+
+[node name="Hard Drive" type="Button" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 1834.0
+offset_top = -57.0
+offset_right = 1954.0
+offset_bottom = -26.0
+text = "Hard Drive"
+metadata/_edit_use_anchors_ = true
+
+[node name="Compiler" type="Button" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 2141.0
+offset_top = -62.0
+offset_right = 2261.0
+offset_bottom = -31.0
+text = "Compiler
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Variable" type="Button" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 1835.0
+offset_top = -13.0
+offset_right = 1955.0
+offset_bottom = 18.0
+text = "Variable
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Stack" type="Button" parent="MainCanvas/Control"]
+z_index = 4
+layout_mode = 0
+offset_left = 2141.0
+offset_top = -18.0
+offset_right = 2261.0
+offset_bottom = 13.0
+text = "Stack"
+metadata/_edit_use_anchors_ = true
