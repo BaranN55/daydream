@@ -3,8 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://Menu Backgrounds/optionsBG.png" id="1_k1e4b"]
 [ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Fonts/Spring Leaves.ttf" id="2_tlci5"]
 [ext_resource type="Script" path="res://chapter_1.gd" id="3_yma5j"]
-[ext_resource type="Script" path="res://chapter_2.gd" id="4_s5ta7"]
-[ext_resource type="Script" path="res://chapter_3.gd" id="5_hk6hh"]
+[ext_resource type="Texture2D" uid="uid://dkkqlywuaohi0" path="res://assets/lock.png" id="6_8so70"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8f2j0"]
 texture = ExtResource("1_k1e4b")
@@ -44,6 +43,9 @@ shadow_offset = Vector2(10, 10)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0udu1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_alser"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k73da"]
+texture = ExtResource("6_8so70")
 
 [node name="Chapter options" type="Control"]
 layout_mode = 3
@@ -109,7 +111,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
 text = "2"
-script = ExtResource("4_s5ta7")
 
 [node name="Chapter3" type="Button" parent="HBoxContainer"]
 layout_mode = 2
@@ -126,7 +127,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s5ta7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hk6hh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0udu1")
 text = "3"
-script = ExtResource("5_hk6hh")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -145,6 +145,22 @@ theme_override_fonts/font = ExtResource("2_tlci5")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxEmpty_alser")
 text = "Select A Chapter"
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 612.0
+offset_top = 386.0
+offset_right = 694.0
+offset_bottom = 459.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_k73da")
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 877.0
+offset_top = 396.0
+offset_right = 959.0
+offset_bottom = 469.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_k73da")
 
 [connection signal="pressed" from="HBoxContainer/Chapter1" to="HBoxContainer/Chapter1" method="_on_pressed"]
 [connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter1" method="_on_chapter_2_pressed"]
