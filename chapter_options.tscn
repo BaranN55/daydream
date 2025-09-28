@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=12 format=3 uid="uid://vl2gvyilr61h"]
 
 [ext_resource type="Texture2D" path="res://ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
@@ -43,6 +44,9 @@ shadow_offset = Vector2(10, 10)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0udu1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_alser"]
+=======
+[gd_scene load_steps=0 format=3 uid="uid://cbkvup1xy11ll"]
+>>>>>>> Stashed changes
 
 [node name="Chapter options" type="Control"]
 layout_mode = 3

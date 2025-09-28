@@ -98,10 +98,18 @@ theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontFile_crdpq")
 theme_override_font_sizes/font_size = 35
+<<<<<<< Updated upstream
 theme_override_styles/normal = SubResource("StyleBoxFlat_p0lcq")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mmg8a")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o7wh8")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_p0lcq")
+=======
+theme_override_styles/normal = SubResource("StyleBoxFlat_0utsm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_crdpq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjylt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_crdpq")
+button_mask = 3
+>>>>>>> Stashed changes
 text = "Start Game"
 
 [node name="Options button" type="Button" parent="VBoxContainer"]
