@@ -78,6 +78,7 @@ position_smoothing_enabled = true
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
 
 [node name="Sacrimenu1" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="Sacrimenu1"]
 layout_mode = 3
