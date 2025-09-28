@@ -151,3 +151,4 @@ text = "Select A Chapter"
 [connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter1" method="_on_chapter_2_pressed"]
 [connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter2" method="_on_pressed"]
 [connection signal="pressed" from="HBoxContainer/Chapter3" to="HBoxContainer/Chapter3" method="_on_pressed"]
+
