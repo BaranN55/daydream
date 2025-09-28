@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://buegcxlxet8p3"]
 
 [ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
-[ext_resource type="PackedScene" path="res://Scenes/Player.tscn" id="2_5gvhy"]
+[ext_resource type="PackedScene" uid="uid://d30ebo7uakvax" path="res://Scenes/Player.tscn" id="2_5gvhy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gvhy"]
 texture = ExtResource("1_3a7yl")
@@ -49,4 +49,4 @@ position = Vector2(2, -67)
 position = Vector2(-17, -1)
 zoom = Vector2(1.2, 1.2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]

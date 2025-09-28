@@ -22,9 +22,8 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_348n5"]
-radius = 25.0
-height = 162.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
+size = Vector2(52, 164)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 2
@@ -35,6 +34,6 @@ sprite_frames = SubResource("SpriteFrames_h4qhm")
 autoplay = "default"
 frame_progress = 0.87294465
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(-17, 0)
-shape = SubResource("CapsuleShape2D_348n5")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-15, -1)
+shape = SubResource("RectangleShape2D_dewec")
