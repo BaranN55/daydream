@@ -1,15 +1,14 @@
-[gd_scene load_steps=0 format=3 uid="uid://cbkvup1xy11ll"]
+[gd_scene load_steps=12 format=3 uid="uid://b4ap1nw2c0xcf"]
 
-[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
-[ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Spring Leaves.ttf" id="2_tlci5"]
-[ext_resource type="Script" uid="uid://c214u86l2sxph" path="res://chapter_1.gd" id="3_yma5j"]
-[ext_resource type="Script" uid="uid://b5y6qxemersip" path="res://chapter_2.gd" id="4_s5ta7"]
-[ext_resource type="Script" uid="uid://d2ykrguty7aak" path="res://chapter_3.gd" id="5_hk6hh"]
-[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://Menu Backgrounds/ChatGPT Image Sep 27, 2025, 09_21_25 PM.png" id="1_k1e4b"]
+[ext_resource type="Texture2D" uid="uid://cui7jmyabxr2f" path="res://Menu Backgrounds/optionsBG.png" id="1_k1e4b"]
 [ext_resource type="FontFile" uid="uid://dfe5ixv61d87y" path="res://Fonts/Spring Leaves.ttf" id="2_tlci5"]
+[ext_resource type="Script" path="res://chapter_1.gd" id="3_yma5j"]
+[ext_resource type="Script" path="res://chapter_2.gd" id="4_s5ta7"]
+[ext_resource type="Script" path="res://chapter_3.gd" id="5_hk6hh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8f2j0"]
 texture = ExtResource("1_k1e4b")
+modulate_color = Color(0.57700837, 0.5770084, 0.57700837, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yma5j"]
 bg_color = Color(1, 1, 1, 1)
@@ -151,4 +150,3 @@ text = "Select A Chapter"
 [connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter1" method="_on_chapter_2_pressed"]
 [connection signal="pressed" from="HBoxContainer/Chapter2" to="HBoxContainer/Chapter2" method="_on_pressed"]
 [connection signal="pressed" from="HBoxContainer/Chapter3" to="HBoxContainer/Chapter3" method="_on_pressed"]
-
