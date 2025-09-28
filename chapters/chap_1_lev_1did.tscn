@@ -1,13 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://buegcxlxet8p3"]
+[gd_scene load_steps=9 format=3 uid="uid://qu2ytbfuyop8"]
 
-[ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="1_3a7yl"]
-[ext_resource type="Script" uid="uid://bonseqod31lrh" path="res://chapters/chap_1_lev_1.gd" id="1_e3j3b"]
-[ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="2_5gvhy"]
-[ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="2_wxanj"]
-[ext_resource type="FontFile" uid="uid://dbscr3a6lxcxi" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="3_kg6q3"]
+[ext_resource type="Script" uid="uid://bonseqod31lrh" path="res://chapters/chap_1_lev_1.gd" id="1_4g1nw"]
+[ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="2_nh38q"]
+[ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="3_rh8lp"]
+[ext_resource type="FontFile" uid="uid://dbscr3a6lxcxi" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="4_5w5ri"]
+[ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="5_68uar"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p54j5"]
-texture = ExtResource("2_wxanj")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3j3b"]
+texture = ExtResource("2_nh38q")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24.28923, -25.06031, 25.445847, -23.903679, 24.674759, 25.060307, -24.674774, 23.903675)
@@ -42,8 +42,8 @@ texture_region_size = Vector2i(50, 50)
 7:0/0 = 0
 7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24.28923, -25.06031, 25.445847, -23.903679, 24.674759, 25.060307, -24.674774, 23.903675)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxanj"]
-texture = ExtResource("1_3a7yl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gvhy"]
+texture = ExtResource("3_rh8lp")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25.17183, -24.215937, 24.809715, -24.809713, 24.59208, 24.592083, -25.027344, 25.02734)
@@ -72,15 +72,14 @@ texture_region_size = Vector2i(50, 50)
 [sub_resource type="TileSet" id="TileSet_kg6q3"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
-sources/2 = SubResource("TileSetAtlasSource_wxanj")
-sources/0 = SubResource("TileSetAtlasSource_p54j5")
+sources/2 = SubResource("TileSetAtlasSource_5gvhy")
+sources/0 = SubResource("TileSetAtlasSource_e3j3b")
 
-[node name="Chap1lev1" type="Node2D"]
-script = ExtResource("1_e3j3b")
+[node name="Chap1lev1did" type="Node2D"]
+script = ExtResource("1_4g1nw")
 
 [node name="MainCanvas" type="CanvasLayer" parent="."]
 layer = 5
-visible = false
 
 [node name="Control" type="Control" parent="MainCanvas"]
 z_index = 4
@@ -171,7 +170,7 @@ offset_left = 325.0
 offset_top = -227.0
 offset_right = 859.0
 offset_bottom = -172.0
-theme_override_fonts/font = ExtResource("3_kg6q3")
+theme_override_fonts/font = ExtResource("4_5w5ri")
 theme_override_font_sizes/font_size = 50
 text = "Use Arrow Keys to Move"
 metadata/_edit_use_anchors_ = true
@@ -181,7 +180,7 @@ offset_left = 1133.0
 offset_top = -218.0
 offset_right = 1667.0
 offset_bottom = -163.0
-theme_override_fonts/font = ExtResource("3_kg6q3")
+theme_override_fonts/font = ExtResource("4_5w5ri")
 theme_override_font_sizes/font_size = 50
 text = "Press Spacebar To Jump"
 metadata/_edit_use_anchors_ = true
@@ -191,12 +190,12 @@ offset_left = -557.0
 offset_top = -226.0
 offset_right = -310.0
 offset_bottom = -171.0
-theme_override_fonts/font = ExtResource("3_kg6q3")
+theme_override_fonts/font = ExtResource("4_5w5ri")
 theme_override_font_sizes/font_size = 30
 text = "Wrong way"
 metadata/_edit_use_anchors_ = true
 
-[node name="player" parent="." instance=ExtResource("2_5gvhy")]
+[node name="player" parent="." instance=ExtResource("5_68uar")]
 position = Vector2(135, -84)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -247,13 +246,3 @@ offset_bottom = 8.0
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
-
-[node name="riddle2" type="Button" parent="."]
-offset_left = 2149.0
-offset_top = -228.0
-offset_right = 2491.0
-offset_bottom = -124.0
-text = "GO TO LEVEL 1"
-metadata/_edit_use_anchors_ = true
-
-[connection signal="pressed" from="riddle2" to="." method="_on_riddle_pressed"]
