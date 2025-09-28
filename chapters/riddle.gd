@@ -2,4 +2,5 @@ extends Button
 
 
 func _on_pressed() -> void:
-	pass # Replace with function body.
+	$"../CanvasLayer".visible = true;
+	print('button press detected');

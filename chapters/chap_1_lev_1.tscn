@@ -168,6 +168,7 @@ offset_right = 8.0
 offset_bottom = 8.0
 
 [node name="MainCanvas" type="CanvasLayer" parent="."]
+visible = false
 layer = 5
 
 [node name="Control" type="Control" parent="MainCanvas"]
