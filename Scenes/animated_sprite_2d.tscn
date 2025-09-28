@@ -23,13 +23,12 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_348n5"]
 radius = 25.0
-height = 170.0
+height = 162.0
 
 [node name="Player" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_h4qhm")
 autoplay = "default"
-frame = 1
-frame_progress = 0.33429596
+frame_progress = 0.87294465
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-17, 0)
