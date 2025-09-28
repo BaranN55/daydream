@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dp4miiuvpa8c5"]
+[gd_scene load_steps=9 format=3 uid="uid://qu2ytbfuyop8"]
 
 [ext_resource type="Script" uid="uid://bonseqod31lrh" path="res://chapters/chap_1_lev_1.gd" id="1_4g1nw"]
 [ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="2_nh38q"]

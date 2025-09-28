@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8xp6u3vybgmn"]
+[gd_scene load_steps=7 format=3 uid="uid://cw5s708udiaj8"]
 
-[ext_resource type="Script" uid="uid://beo5mdlq2g3tf" path="res://tomriddle.gd" id="1_4e1da"]
 [ext_resource type="Texture2D" uid="uid://chy7bu23youk1" path="res://assets/New Tile Set.png" id="1_ltnli"]
 [ext_resource type="Texture2D" uid="uid://bj5ymq1a4pfkk" path="res://assets/Tile set (2).png" id="2_nwrfu"]
 [ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="3_nwrfu"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqljv"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4e1da"]
 texture = ExtResource("1_ltnli")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
@@ -41,7 +40,7 @@ texture_region_size = Vector2i(50, 50)
 7:0/0 = 0
 7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24.28923, -25.06031, 25.445847, -23.903679, 24.674759, 25.060307, -24.674774, 23.903675)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ar45r"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqljv"]
 texture = ExtResource("2_nwrfu")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
@@ -71,11 +70,10 @@ texture_region_size = Vector2i(50, 50)
 [sub_resource type="TileSet" id="TileSet_ar45r"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
-sources/2 = SubResource("TileSetAtlasSource_ar45r")
-sources/0 = SubResource("TileSetAtlasSource_aqljv")
+sources/2 = SubResource("TileSetAtlasSource_aqljv")
+sources/0 = SubResource("TileSetAtlasSource_4e1da")
 
 [node name="tomriddle" type="Node2D"]
-script = ExtResource("1_4e1da")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, -3)
@@ -158,16 +156,3 @@ offset_bottom = -41.0
 text = "Variable
 "
 metadata/_edit_use_anchors_ = true
-
-[node name="WrongAnswerLabel" type="Label" parent="."]
-offset_left = 2117.0
-offset_top = -318.0
-offset_right = 2284.0
-offset_bottom = -262.0
-text = "Your answer is wrong
-Try again"
-
-[connection signal="pressed" from="Hard Drive" to="." method="_on_hard_drive_pressed"]
-[connection signal="pressed" from="Compiler" to="." method="_on_compiler_pressed"]
-[connection signal="pressed" from="Stack" to="." method="_on_stack_pressed"]
-[connection signal="pressed" from="Variable" to="." method="_on_variable_pressed"]
