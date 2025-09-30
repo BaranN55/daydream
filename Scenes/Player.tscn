@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c6brb3vuswieh"]
+[gd_scene load_steps=28 format=3 uid="uid://c6brb3vuswieh"]
 
 [ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://character_body_2d.gd" id="1_44cfe"]
 [ext_resource type="Texture2D" uid="uid://cfywqaqecpglp" path="res://assets/Flipped Idle 1.png" id="2_bhhdu"]
@@ -17,6 +17,14 @@
 [ext_resource type="Texture2D" uid="uid://dn263hvqs4pga" path="res://assets/run5.png" id="15_qidb7"]
 [ext_resource type="Texture2D" uid="uid://dltibkucnuxj" path="res://assets/run3.png" id="16_70hv0"]
 [ext_resource type="Texture2D" uid="uid://w2xnm81rkea7" path="res://assets/run4.png" id="17_8flut"]
+[ext_resource type="Texture2D" uid="uid://cuay646jgm845" path="res://assets/SwordLeft (1).png" id="18_70hv0"]
+[ext_resource type="Texture2D" uid="uid://k5y0rv8g6pj" path="res://assets/SwordLeft (2).png" id="19_8flut"]
+[ext_resource type="Texture2D" uid="uid://csjj28vgvhffs" path="res://assets/SwordLeft.png" id="20_u7x0b"]
+[ext_resource type="Texture2D" uid="uid://b580ue1g4w1bm" path="res://assets/SwordLeft (3).png" id="21_utwlt"]
+[ext_resource type="Texture2D" uid="uid://oidhm5lb2i0o" path="res://assets/swordswing1.png" id="22_kih0c"]
+[ext_resource type="Texture2D" uid="uid://3g3ursek11j6" path="res://assets/swordswing2.png" id="23_lyrkg"]
+[ext_resource type="Texture2D" uid="uid://oy2llf1vbu62" path="res://assets/swordswing3.png" id="24_c43xd"]
+[ext_resource type="Texture2D" uid="uid://bqv15p3kot2n7" path="res://assets/swordswing4.png" id="25_avx33"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h4qhm"]
 animations = [{
@@ -87,6 +95,58 @@ animations = [{
 "loop": true,
 "name": &"RunRight",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_70hv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8flut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_u7x0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_utwlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_u7x0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8flut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_70hv0")
+}],
+"loop": true,
+"name": &"SwordLeft",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_kih0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_lyrkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_c43xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_avx33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_c43xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_lyrkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_kih0c")
+}],
+"loop": true,
+"name": &"SwordRight",
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
@@ -101,8 +161,10 @@ script = ExtResource("1_44cfe")
 position = Vector2(-6, 9)
 scale = Vector2(0.94, 0.94)
 sprite_frames = SubResource("SpriteFrames_h4qhm")
-animation = &"Normal Idle"
+animation = &"SwordLeft"
 autoplay = "Normal Idle"
+frame = 5
+frame_progress = 0.045879163
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-33, 3.5)
