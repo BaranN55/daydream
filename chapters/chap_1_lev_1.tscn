@@ -176,6 +176,7 @@ theme_override_font_sizes/font_size = 50
 text = "Use Arrow Keys to Move"
 metadata/_edit_use_anchors_ = true
 
+
 [node name="Label2" type="Label" parent="."]
 offset_left = 1133.0
 offset_top = -218.0
@@ -197,7 +198,7 @@ text = "Wrong way"
 metadata/_edit_use_anchors_ = true
 
 [node name="player" parent="." instance=ExtResource("2_5gvhy")]
-position = Vector2(-160, -90)
+position = Vector2(61, -55)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(-15, -41)
@@ -323,5 +324,5 @@ offset_bottom = -83.0
 text = "START LEVEL 1"
 script = ExtResource("6_wxanj")
 
-[connection signal="pressed" from="Riddle2" to="." method="_on_riddle_2_pressed"]
 [connection signal="pressed" from="Riddle2" to="." method="_on_riddle_pressed"]
+[connection signal="pressed" from="Riddle2" to="." method="_on_riddle_2_pressed"]

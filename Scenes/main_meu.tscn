@@ -1,12 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://daghvedcn0a7k"]
+[gd_scene load_steps=9 format=3 uid="uid://daghvedcn0a7k"]
 
 [ext_resource type="Script" uid="uid://bmfx42jqyjy1n" path="res://Scripts/main_meu.gd" id="1_0utsm"]
-[ext_resource type="Texture2D" uid="uid://q4u6bsj7myye" path="res://Menu Backgrounds/Image_20250927_170805_364.png" id="2_p0lcq"]
-[ext_resource type="FontFile" uid="uid://dbscr3a6lxcxi" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="3_mmg8a"]
+[ext_resource type="Texture2D" uid="uid://dj2hpo1bsn8k8" path="res://assets/bg.png" id="2_xsqy4"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o7wh8"]
-texture = ExtResource("2_p0lcq")
-modulate_color = Color(0.3779188, 0.37791887, 0.37791884, 1)
+texture = ExtResource("2_xsqy4")
+modulate_color = Color(0.74558026, 0.7455802, 0.74558014, 1)
 
 [sub_resource type="FontFile" id="FontFile_crdpq"]
 subpixel_positioning = 0
@@ -133,23 +132,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_mmg8a")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o7wh8")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_p0lcq")
 text = "Exit"
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -277.0
-offset_top = 80.0
-offset_right = 277.0
-offset_bottom = 249.0
-grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_y = 7
-theme_override_fonts/font = ExtResource("3_mmg8a")
-theme_override_font_sizes/font_size = 100
-text = "Game Name"
-horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options button" to="." method="_on_options_pressed"]
