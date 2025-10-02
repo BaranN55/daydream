@@ -42,7 +42,7 @@ texture_region_size = Vector2i(50, 50)
 7:0/0 = 0
 7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24.28923, -25.06031, 25.445847, -23.903679, 24.674759, 25.060307, -24.674774, 23.903675)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxanj"]
+[sub_resource type="TileSetAtlasSource" id=2]
 texture = ExtResource("1_3a7yl")
 texture_region_size = Vector2i(50, 50)
 0:0/0 = 0
@@ -72,8 +72,8 @@ texture_region_size = Vector2i(50, 50)
 [sub_resource type="TileSet" id="TileSet_d504x"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
-sources/2 = SubResource("TileSetAtlasSource_wxanj")
-sources/0 = SubResource("TileSetAtlasSource_p54j5")
+sources/2 = SubResource(2)
+sources/0 = SubResource(1)
 
 [node name="Chap1lev1" type="Node2D"]
 script = ExtResource("1_e3j3b")
@@ -322,7 +322,7 @@ offset_top = -156.0
 offset_right = 2270.0
 offset_bottom = -83.0
 text = "START LEVEL 1"
-script = ExtResource("6_wxanj")
+
 
 [connection signal="pressed" from="Riddle2" to="." method="_on_riddle_pressed"]
 [connection signal="pressed" from="Riddle2" to="." method="_on_riddle_2_pressed"]
