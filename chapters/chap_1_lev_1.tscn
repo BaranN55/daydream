@@ -1,72 +1,126 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://buegcxlxet8p3"]
 
 [ext_resource type="Script" path="res://chapters/chap_1_lev_1.gd" id="1"]
 [ext_resource type="PackedScene" path="res://Scenes/Player.tscn" id="2"]
 [ext_resource type="Texture2D" path="res://tile_sheet_128px_by_128px.png" id="3"]
 [ext_resource type="FontFile" path="res://Fonts/FinolaLaoiseDemoRegular.ttf" id="4"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_main"]
+texture = ExtResource("3")
+separation = Vector2i(8, 8)
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
 [sub_resource type="TileSet" id="TileSet_main"]
-0/texture = ExtResource("3")
-0/texture_region_size = Vector2i(120, 120)
-0/0 = 0
-0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_main")
 
 [node name="Chap1lev1" type="Node2D"]
 script = ExtResource("1")
 
-# --- TileMap with ground + platforms ---
+# --- UI Layer ---
+[node name="MainCanvas" type="CanvasLayer" parent="."]
+layer = 5
+visible = false
+
+[node name="Control" type="Control" parent="MainCanvas"]
+z_index = 4
+offset_left = 40
+offset_top = -74
+offset_right = 80
+offset_bottom = -34
+
+[node name="Panel" type="Panel" parent="MainCanvas/Control"]
+z_index = 4
+offset_left = 1800
+offset_top = -210
+offset_right = 2330
+offset_bottom = 40
+
+[node name="Label" type="Label" parent="MainCanvas/Control"]
+z_index = 5
+offset_left = 1820
+offset_top = -200
+offset_right = 2320
+offset_bottom = -70
+text = "I’m not a magician, but I can make things appear out of nowhere. 
+I’m not a librarian, yet I store millions of items. 
+You can’t see me working, but without me, your code is broken. 
+I exist in RAM, and I vanish when power is gone. What am I?"
+
+[node name="Hard Drive" type="Button" parent="MainCanvas/Control"]
+offset_left = 1830
+offset_top = -60
+offset_right = 1950
+offset_bottom = -30
+text = "Hard Drive"
+
+[node name="Compiler" type="Button" parent="MainCanvas/Control"]
+offset_left = 2140
+offset_top = -60
+offset_right = 2260
+offset_bottom = -30
+text = "Compiler"
+
+[node name="Variable" type="Button" parent="MainCanvas/Control"]
+offset_left = 1830
+offset_top = -20
+offset_right = 1950
+offset_bottom = 10
+text = "Variable"
+
+[node name="Stack" type="Button" parent="MainCanvas/Control"]
+offset_left = 2140
+offset_top = -20
+offset_right = 2260
+offset_bottom = 10
+text = "Stack"
+
+# --- TileMap ---
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_main")
 format = 2
-layer_0/name = "Ground"
-# Tile data encodes positions. This builds:
-# - A flat ground
-# - Platforms above
-layer_0/tile_data = PackedInt32Array(
-    # Flat ground
-    -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0,
-    -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0,
-    -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0,
-    -65521, 0, 0, -65520, 0, 0,
-    # A floating platform
-    -131070, 0, 0, -131069, 0, 0, -131068, 0, 0,
-    # Another platform
-    -196600, 0, 0, -196599, 0, 0, -196598, 0, 0
-)
+layer_0/name = "Background"
+# keep your packed tile_data if you want; shortened here
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0)
 
-# --- Player ---
-[node name="Player" parent="." instance=ExtResource("2")]
-position = Vector2(-700, -300)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-limit_left = -2000
-limit_top = -1000
-limit_right = 4000
-limit_bottom = 1000
-position_smoothing_enabled = true
-
-# --- Labels (tutorial hints) ---
+# --- Labels ---
 [node name="Label_controls" type="Label" parent="."]
-offset_left = -900
-offset_top = -500
-offset_right = -200
-offset_bottom = -450
+offset_left = 85
+offset_top = -130
+offset_right = 620
+offset_bottom = -70
 theme_override_fonts/font = ExtResource("4")
 theme_override_font_sizes/font_size = 60
 text = "Use WASD to move"
 
 [node name="Label_jump" type="Label" parent="."]
-offset_left = -200
-offset_top = -500
-offset_right = 600
-offset_bottom = -450
+offset_left = 1500
+offset_top = -200
+offset_right = 2100
+offset_bottom = -140
 theme_override_fonts/font = ExtResource("4")
 theme_override_font_sizes/font_size = 60
-text = "Press SPACE to jump"
+text = "Press Spacebar to Jump"
 
-# --- Goal ---
-[node name="Goal" type="Area2D" parent="."]
-position = Vector2(600, -400)
+[node name="Label_wrong" type="Label" parent="."]
+offset_left = -840
+offset_top = -140
+offset_right = -590
+offset_bottom = -80
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 60
+text = "Wrong way!"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
-shape = RectangleShape2D
+# --- Player ---
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(60, -55)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(240, 150)
+limit_left = -1100
+limit_top = -1000
+limit_right = 10000
+limit_bottom = 760
+position_smoothing_enabled = true
