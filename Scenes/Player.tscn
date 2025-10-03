@@ -150,7 +150,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
-size = Vector2(96, 163)
+size = Vector2(147, 318)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 3
@@ -158,14 +158,14 @@ collision_mask = 3
 script = ExtResource("1_44cfe")
 
 [node name="Player" type="AnimatedSprite2D" parent="."]
-position = Vector2(-6, 9)
-scale = Vector2(0.94, 0.94)
+position = Vector2(262.711, 187.00002)
+scale = Vector2(1.779722, 1.638889)
 sprite_frames = SubResource("SpriteFrames_h4qhm")
-animation = &"SwordLeft"
+animation = &"SwordRight"
 autoplay = "Normal Idle"
 frame = 5
-frame_progress = 0.045879163
+frame_progress = 0.6950146
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-33, 3.5)
+position = Vector2(250.5, 178)
 shape = SubResource("RectangleShape2D_dewec")

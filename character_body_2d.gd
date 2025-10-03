@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 500.0
+const JUMP_VELOCITY = -530.0
 
 @onready var anim: AnimatedSprite2D = $Player
 @onready var character: CharacterBody2D = $"." 
@@ -13,12 +13,19 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Jump
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	# Jump (Space or W)
+	if (Input.is_action_just_pressed("ui_accept") or Input.is_key_pressed(KEY_W)) and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Movement input
+	# Movement input (arrows or A/D)
 	var direction := Input.get_axis("ui_left", "ui_right")
+
+	if direction == 0:
+		# Fallback to A/D keys
+		if Input.is_key_pressed(KEY_A):
+			direction = -1
+		elif Input.is_key_pressed(KEY_D):
+			direction = 1
 
 	if direction != 0:
 		velocity.x = direction * SPEED
