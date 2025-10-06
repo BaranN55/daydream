@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4g5a1ng8fidd"
-path="res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"
+uid="uid://bxvcgy71ps1d5"
+path="res://.godot/imported/Green Portal Sprite Sheet.png-d7c577615be879b71f3928d691cf68d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile_sheet_128px_by_128px.png"
-dest_files=["res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"]
+source_file="res://assets/Green Portal Sprite Sheet.png"
+dest_files=["res://.godot/imported/Green Portal Sprite Sheet.png-d7c577615be879b71f3928d691cf68d9.ctex"]
 
 [params]
 

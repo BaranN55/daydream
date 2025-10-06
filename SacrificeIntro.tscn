@@ -1,0 +1,280 @@
+[gd_scene load_steps=26 format=3 uid="uid://calika6s4pw6i"]
+
+[ext_resource type="Script" uid="uid://cx0eq4eaxso07" path="res://Scripts/sacrifice_intro.gd" id="1_vqmgm"]
+[ext_resource type="Texture2D" uid="uid://715ve24c0h3f" path="res://Menu Backgrounds/SacrificesScreenImage.png" id="2_j7mek"]
+[ext_resource type="AudioStream" uid="uid://r3pyf4yww5rw" path="res://Sounds/Sacrifice 1.mp3" id="2_mpw33"]
+[ext_resource type="FontFile" uid="uid://c8yvr55hismfn" path="res://Fonts/CHICKEN Pie.otf" id="2_rl4ee"]
+[ext_resource type="Texture2D" uid="uid://byua728i1ol3" path="res://assets/Bulletin Board.png" id="3_bi36e"]
+[ext_resource type="Texture2D" uid="uid://b4yrxv8es506f" path="res://assets/image_2025-10-05_151123296-removebg-preview.png" id="4_63bsm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0kpk8"]
+texture = ExtResource("2_j7mek")
+modulate_color = Color(0.646029, 0.646029, 0.646029, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_63bsm"]
+texture = ExtResource("3_bi36e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ppur"]
+texture = ExtResource("4_63bsm")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uyjns"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uvcgo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lqf0r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yg335"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2aiuk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27fd0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fypar"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i0sqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2xw8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hidpw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72jy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_571h2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kpk8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_63bsm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ppur"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7f6tg"]
+
+[node name="SacrificeIntro" type="CanvasLayer"]
+script = ExtResource("1_vqmgm")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0kpk8")
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -895.0
+offset_top = -521.0
+offset_right = 912.0
+offset_bottom = -203.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_63bsm")
+
+[node name="Panel3" type="Panel" parent="."]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -499.0
+offset_top = 318.0
+offset_right = 513.0
+offset_bottom = 949.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_63bsm")
+
+[node name="EyesightPanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -146.0
+offset_right = 232.67236
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5ppur")
+
+[node name="EyesightButton" type="Button" parent="EyesightPanel"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 47.0
+offset_right = 345.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_uyjns")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uvcgo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lqf0r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yg335")
+text = "Eyesight"
+flat = true
+
+[node name="BalancePanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.05176
+offset_top = -13.0
+offset_right = 234.63794
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5ppur")
+
+[node name="BalanceButton" type="Button" parent="BalancePanel"]
+layout_mode = 0
+offset_left = 100.05176
+offset_top = 47.0
+offset_right = 351.05176
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2aiuk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_27fd0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fypar")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i0sqb")
+text = "Balance"
+flat = true
+
+[node name="ControlPanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -229.0
+offset_top = 129.0
+offset_right = 238.67249
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5ppur")
+
+[node name="ControlButton" type="Button" parent="ControlPanel"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 47.0
+offset_right = 352.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c2xw8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hidpw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_72jy6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_571h2")
+text = "Control"
+flat = true
+
+[node name="Panel4" type="Panel" parent="."]
+visible = false
+offset_left = 867.0
+offset_top = 878.0
+offset_right = 1077.0
+offset_bottom = 976.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5ppur")
+
+[node name="SacrificeButton" type="Button" parent="Panel4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.0
+offset_top = -23.0
+offset_right = 66.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0kpk8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_63bsm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5ppur")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7f6tg")
+text = "Sacrifice"
+
+[node name="Congrats" type="Label" parent="."]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -342.0
+offset_top = 99.0
+offset_right = 384.0
+offset_bottom = 212.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 120
+text = "Level 1 Complete"
+
+[node name="Text1" type="Label" parent="."]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.54800004
+offset_left = -306.0
+offset_top = -12.0
+offset_right = 324.0
+offset_bottom = 131.15997
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 50
+text = "You Made It through
+ the first gate... 
+but time is never free"
+horizontal_alignment = 1
+
+[node name="Text2" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -302.0
+offset_top = -38.0
+offset_right = 326.0
+offset_bottom = 223.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 50
+text = "This world runs on loss. 
+To move forward,
+something must
+be taken."
+horizontal_alignment = 1
+
+[node name="Choose" type="Label" parent="."]
+visible = false
+offset_left = 474.0
+offset_top = 125.0
+offset_right = 1724.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("2_rl4ee")
+theme_override_font_sizes/font_size = 80
+text = "Choose What To Sacrifice"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_mpw33")
+
+[connection signal="pressed" from="EyesightPanel/EyesightButton" to="." method="_on_eyesight_button_pressed"]

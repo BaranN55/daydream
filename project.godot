@@ -16,6 +16,19 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/icon.svg"
 <<<<<<<HEADconfig/icon="res://assets/icon.svg"
 
+[autoload]
+
+GameManager="*res://GameManager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[global_group]
+
+Player=""
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

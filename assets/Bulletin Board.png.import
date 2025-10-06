@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4g5a1ng8fidd"
-path="res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"
+uid="uid://byua728i1ol3"
+path="res://.godot/imported/Bulletin Board.png-9d4eab92e41be5dd99f048f1e1eac749.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile_sheet_128px_by_128px.png"
-dest_files=["res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"]
+source_file="res://assets/Bulletin Board.png"
+dest_files=["res://.godot/imported/Bulletin Board.png-9d4eab92e41be5dd99f048f1e1eac749.ctex"]
 
 [params]
 

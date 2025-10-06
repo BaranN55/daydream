@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4g5a1ng8fidd"
-path="res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"
+uid="uid://715ve24c0h3f"
+path="res://.godot/imported/SacrificesScreenImage.png-14c212ef9cdf9e2efb38fec442c3bc91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile_sheet_128px_by_128px.png"
-dest_files=["res://.godot/imported/tile_sheet_128px_by_128px.png-26727c18cf06c012e7fe836dab098202.ctex"]
+source_file="res://Menu Backgrounds/SacrificesScreenImage.png"
+dest_files=["res://.godot/imported/SacrificesScreenImage.png-14c212ef9cdf9e2efb38fec442c3bc91.ctex"]
 
 [params]
 
