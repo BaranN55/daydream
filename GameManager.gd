@@ -1,24 +1,29 @@
 extends Node
 
-# Total extra time earned from sacrifices
-var total_time: float = 0
+# how many times each sacrifice was chosen
+var sacrifice_levels: Dictionary = {
+	"Eyesight": 0,
+	"Balance": 0,
+	"Control": 0
+}
 
-# List of active sacrifices (each name is unique)
-var active_sacrifices: Array = []
+# global extra time pool
+var total_time: float = 0.0
 
-# Adds extra time gained from a sacrifice
+func apply_sacrifice(name: String) -> void:
+	if sacrifice_levels.has(name):
+		sacrifice_levels[name] += 1
+		print("Sacrifice applied:", name, "-> level", sacrifice_levels[name])
+
+func sacrifice_level(name: String) -> int:
+	return sacrifice_levels.get(name, 0)
+
+func has_sacrifice(name: String) -> bool:
+	return sacrifice_levels.get(name, 0) > 0
+
 func add_time(seconds: float) -> void:
 	total_time += seconds
 	print("Added", seconds, "seconds. Total time:", total_time)
 
-# Applies a new sacrifice (only once)
-func apply_sacrifice(name: String) -> void:
-	if name not in active_sacrifices:
-		active_sacrifices.append(name)
-		print("Applied sacrifice:", name)
-	else:
-		print("Sacrifice already active:", name)
-
-# Checks if a sacrifice is active
-func has_sacrifice(name: String) -> bool:
-	return name in active_sacrifices
+func get_total_time() -> float:
+	return total_time
