@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://isckwv76saik"]
+
+[ext_resource type="Script" uid="uid://b1a2exggvbkey" path="res://Scripts/killzone.gd" id="1_7cbij"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8vac"]
+size = Vector2(4155, 20)
+
+[node name="Killzone2" type="Area2D"]
+position = Vector2(13686, -7870)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_7cbij")
+
+[node name="Timerse" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2067.5, 0)
+shape = SubResource("RectangleShape2D_g8vac")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timerse" to="." method="_on_timer_timeout"]
