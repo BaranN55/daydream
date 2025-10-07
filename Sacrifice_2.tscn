@@ -1,0 +1,375 @@
+[gd_scene load_steps=27 format=3 uid="uid://c6wt28eiq8mfq"]
+
+[ext_resource type="Script" uid="uid://idxe0ynou881" path="res://sacrifice_2.gd" id="1_d1duh"]
+[ext_resource type="Texture2D" uid="uid://dlkfi4tltbawx" path="res://Menu Backgrounds/Sacrifices 2 Image.png" id="2_arrpq"]
+[ext_resource type="Texture2D" uid="uid://byua728i1ol3" path="res://assets/Bulletin Board.png" id="2_d1duh"]
+[ext_resource type="Texture2D" uid="uid://b4yrxv8es506f" path="res://assets/image_2025-10-05_151123296-removebg-preview.png" id="3_arrpq"]
+[ext_resource type="FontFile" uid="uid://c8yvr55hismfn" path="res://Fonts/CHICKEN Pie.otf" id="4_u2lvb"]
+[ext_resource type="AudioStream" uid="uid://drqjily2nlupr" path="res://Sounds/Sacrifice 2.mp3" id="5_0a530"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fjhqh"]
+texture = ExtResource("2_arrpq")
+modulate_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iobwu"]
+texture = ExtResource("2_d1duh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e3v8o"]
+texture = ExtResource("3_arrpq")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_15moh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qcglc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sc8eb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sp8ts"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m2ahd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n3sa4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mvpwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gwj1m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82xgx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4redh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhb7e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_caj8y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t08pf"]
+texture = ExtResource("3_arrpq")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i1dlg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_egkqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cas06"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lg3mi"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_d1duh")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_fjhqh")
+
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -895.0
+offset_top = -521.0
+offset_right = 912.0
+offset_bottom = -203.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_iobwu")
+
+[node name="Panel3" type="Panel" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -499.0
+offset_top = 318.0
+offset_right = 513.0
+offset_bottom = 949.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_iobwu")
+
+[node name="EyesightPanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -146.0
+offset_right = 232.67236
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="EyesightButton" type="Button" parent="EyesightPanel"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 47.0
+offset_right = 345.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_15moh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qcglc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_sc8eb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sp8ts")
+text = "Eyesight"
+flat = true
+
+[node name="BalancePanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.05176
+offset_top = -13.0
+offset_right = 234.63794
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="BalanceButton" type="Button" parent="BalancePanel"]
+layout_mode = 0
+offset_left = 100.05176
+offset_top = 47.0
+offset_right = 351.05176
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m2ahd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_n3sa4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mvpwt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gwj1m")
+text = "Balance"
+flat = true
+
+[node name="ControlPanel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -229.0
+offset_top = 129.0
+offset_right = 238.67249
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="ControlButton" type="Button" parent="ControlPanel"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 47.0
+offset_right = 352.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_82xgx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4redh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bhb7e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_caj8y")
+text = "Control"
+flat = true
+
+[node name="Panel4" type="Panel" parent="."]
+visible = false
+offset_left = 867.0
+offset_top = 878.0
+offset_right = 1077.0
+offset_bottom = 976.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_t08pf")
+
+[node name="SacrificeButton" type="Button" parent="Panel4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.0
+offset_top = -23.0
+offset_right = 66.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1dlg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_egkqb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cas06")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lg3mi")
+text = "Sacrifice"
+
+[node name="Congrats" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -342.0
+offset_top = 99.0
+offset_right = 384.0
+offset_bottom = 212.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 120
+text = "Level 2 Complete"
+
+[node name="Text1" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.54800004
+offset_left = -306.0
+offset_top = -12.0
+offset_right = 324.0
+offset_bottom = 131.15997
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 50
+text = "You're getting
+ better at going 
+through these levels!"
+horizontal_alignment = 1
+
+[node name="Text2" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -302.0
+offset_top = -10.0
+offset_right = 326.0
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 50
+text = "Keep it up!
+ But now its time 
+to sacrifice"
+horizontal_alignment = 1
+
+[node name="Choose" type="Label" parent="."]
+visible = false
+offset_left = 474.0
+offset_top = 125.0
+offset_right = 1724.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 80
+text = "Choose What To Sacrifice"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0a530")
+
+[node name="Size" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -146.0
+offset_right = 232.67236
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="SizeButton" type="Button" parent="Size"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 47.0
+offset_right = 345.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_15moh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qcglc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_sc8eb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sp8ts")
+text = "Size"
+flat = true
+
+[node name="Speed" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.05176
+offset_top = -13.0
+offset_right = 234.63794
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="SpeedButton" type="Button" parent="Speed"]
+layout_mode = 0
+offset_left = 100.05176
+offset_top = 47.0
+offset_right = 351.05176
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m2ahd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_n3sa4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mvpwt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gwj1m")
+text = "Speed"
+flat = true
+
+[node name="Zoom" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -229.0
+offset_top = 129.0
+offset_right = 238.67249
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e3v8o")
+
+[node name="ZoomButton" type="Button" parent="Zoom"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 47.0
+offset_right = 352.0
+offset_bottom = 123.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_u2lvb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_82xgx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4redh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bhb7e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_caj8y")
+text = "Zoom
+"
+flat = true
+
+[connection signal="pressed" from="EyesightPanel/EyesightButton" to="." method="_on_eyesight_button_pressed"]
+[connection signal="pressed" from="BalancePanel/BalanceButton" to="." method="_on_balance_button_pressed"]
+[connection signal="pressed" from="ControlPanel/ControlButton" to="." method="_on_control_button_pressed"]
+[connection signal="pressed" from="Panel4/SacrificeButton" to="." method="_on_sacrifice_button_pressed"]

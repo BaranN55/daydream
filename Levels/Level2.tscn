@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://blxjat2wl5hwt"]
+[gd_scene load_steps=25 format=3 uid="uid://blxjat2wl5hwt"]
 
 [ext_resource type="Script" uid="uid://31oo1sf72v77" path="res://Scripts/level_2.gd" id="1_x7rwe"]
 [ext_resource type="Texture2D" uid="uid://4g5a1ng8fidd" path="res://assets/tile_sheet_128px_by_128px.png" id="2_lf2mf"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dqgvg7ek30774" path="res://killzone.tscn" id="8_v023s"]
 [ext_resource type="PackedScene" uid="uid://isckwv76saik" path="res://killzone_2.tscn" id="9_biamp"]
 [ext_resource type="Script" uid="uid://d2rt3454bu1d1" path="res://Levels/killzone2.gd" id="10_cch3g"]
+[ext_resource type="PackedScene" uid="uid://dof5o4jaeea7i" path="res://portal.tscn" id="11_lf2mf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v115i"]
 texture = ExtResource("2_lf2mf")
@@ -397,3 +398,7 @@ position = Vector2(4549, 1448)
 [node name="Killzone2" parent="." instance=ExtResource("9_biamp")]
 position = Vector2(9115, 103)
 script = ExtResource("10_cch3g")
+
+[node name="Green Portal" parent="." instance=ExtResource("11_lf2mf")]
+position = Vector2(19203, -814)
+collision_mask = 2

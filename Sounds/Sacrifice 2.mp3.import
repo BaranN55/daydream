@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drqjily2nlupr"
+path="res://.godot/imported/Sacrifice 2.mp3-529b7033cf41e7db50c7af62092f3e62.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Sacrifice 2.mp3"
+dest_files=["res://.godot/imported/Sacrifice 2.mp3-529b7033cf41e7db50c7af62092f3e62.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

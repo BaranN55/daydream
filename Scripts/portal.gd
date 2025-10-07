@@ -6,4 +6,8 @@ func _ready():
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("Player"):
 		print("Player touched portal — loading SacrificeIntro")
-		get_tree().change_scene_to_file("res://SacrificeIntro.tscn")
+		if GameManager.level == 1:
+			get_tree().change_scene_to_file("res://SacrificeIntro.tscn")
+		else: if GameManager.level == 2:
+			get_tree().change_scene_to_file("res://Sacrifice_2.tscn")
+			

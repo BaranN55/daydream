@@ -6,6 +6,7 @@ extends Node2D
 @onready var dead_audio: AudioStreamPlayer = $DeadAudio
 
 func _ready():
+	GameManager.level = 1
 	if dead1g == false:
 		audio.play()
 	else:

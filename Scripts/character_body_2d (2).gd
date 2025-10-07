@@ -29,11 +29,11 @@ func _physics_process(delta: float) -> void:
 	if GameManager.control_sacrificed:
 		# delayed response to movement
 		input_delay += delta
-		if input_delay > 0.31: # delay between input updates
+		if input_delay > 0.23: # delay between input updates
 			stored_direction = direction
 			input_delay = 0.0
 		direction = stored_direction
-		velocity.x = lerp(velocity.x, direction * SPEED * 0.7, 0.015)
+		velocity.x = lerp(velocity.x, direction * SPEED * 0.7, 0.03)
 	else:
 		velocity.x = direction * SPEED
 
