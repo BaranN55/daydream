@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp0wupctskwrr"]
+
+[ext_resource type="Shader" uid="uid://bxj4dd8bm0pwe" path="res://eyesight_overlay.gdshader" id="1_c7cwc"]
+[ext_resource type="Script" uid="uid://tc6xkjn2sjo0" path="res://eyesight_overlay.gd" id="2_jfogw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7mntm"]
+shader = ExtResource("1_c7cwc")
+shader_parameter/darkness = 0.0
+
+[node name="EyesightOverlay" type="ColorRect"]
+material = SubResource("ShaderMaterial_7mntm")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_jfogw")

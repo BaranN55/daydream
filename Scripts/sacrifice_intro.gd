@@ -1,18 +1,9 @@
 extends CanvasLayer
 
-@onready var text_label: Label = $Congrats
 @onready var audio: AudioStreamPlayer = $AudioStreamPlayer
-@onready var sacrifice_button: Button = $Panel4/SacrificeButton
-
-var sacrifice_data = {
-	"Eyesight": {"time": 10},
-	"Balance": {"time": 8},
-	"Control": {"time": 6}
-}
 
 func _ready():
 	$Panel4.visible = false
-	sacrifice_button.connect("pressed", Callable(self, "_on_sacrifice_pressed"))
 	show_intro()
 
 func show_intro():
@@ -44,24 +35,17 @@ func _on_sacrifice_pressed():
 	$BalancePanel.visible = true
 	$ControlPanel.visible = true
 
+# Eyesight sacrifice button
 func _on_eyesight_button_pressed():
-	print("Sacrificed eyesight.")
 	GameManager.apply_sacrifice("Eyesight")
-	GameManager.add_time(10)
+	get_tree().change_scene_to_file("res://Levels/Level2.tscn")
 
-	# Optional: store the eyesight effect intensity immediately
-	GameManager.set_sacrifice_strength("Eyesight", 1)  # You can make it stronger later
+# Balance sacrifice button (optional)
+func _on_balance_button_pressed():
+	GameManager.apply_sacrifice("Balance")
+	get_tree().change_scene_to_file("res://Levels/Level2.tscn")
 
-	# Preload Level2, activate overlay before showing it
-	var next_level = load("res://Levels/Level2.tscn").instantiate()
-
-	if next_level.has_node("EyesightOverlay"):
-		var overlay = next_level.get_node("EyesightOverlay")
-		var level = GameManager.sacrifice_level("Eyesight")
-		var alpha = clamp(0.25 + 0.2 * level, 0.0, 1.0)
-		overlay.color = Color(0, 0, 0, alpha)
-		print("Applied eyesight overlay immediately, alpha:", alpha)
-
-	get_tree().root.add_child(next_level)
-	get_tree().current_scene.queue_free()
-	get_tree().current_scene = next_level
+# Control sacrifice button (optional)
+func _on_control_button_pressed():
+	GameManager.apply_sacrifice("Control")
+	get_tree().change_scene_to_file("res://Levels/Level2.tscn")

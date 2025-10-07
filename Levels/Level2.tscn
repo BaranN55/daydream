@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://blxjat2wl5hwt"]
+[gd_scene load_steps=15 format=3 uid="uid://blxjat2wl5hwt"]
 
 [ext_resource type="Script" uid="uid://31oo1sf72v77" path="res://Scripts/level_2.gd" id="1_nn734"]
 [ext_resource type="Texture2D" uid="uid://4g5a1ng8fidd" path="res://assets/tile_sheet_128px_by_128px.png" id="2_506po"]
 [ext_resource type="PackedScene" uid="uid://c6brb3vuswieh" path="res://Scenes/Player.tscn" id="3_v115i"]
 [ext_resource type="PackedScene" uid="uid://cugbu4w0rbbx5" path="res://platform.tscn" id="4_506po"]
-[ext_resource type="Script" uid="uid://xmoq1hfponek" path="res://Levels/eyesight_overlay.gd" id="5_v115i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v115i"]
 texture = ExtResource("2_506po")
@@ -224,13 +223,3 @@ libraries = {
 &"": SubResource("AnimationLibrary_jglcl")
 }
 autoplay = "LavaMove"
-
-[node name="EyesightOverlay" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 0)
-script = ExtResource("5_v115i")
