@@ -2,6 +2,7 @@ extends CanvasLayer
 
 @onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
+
 func _ready():
 	$Panel4.visible = false
 	show_intro()
@@ -25,7 +26,7 @@ func show_intro():
 	await audio.finished
 	$Panel4.visible = true
 
-func _on_sacrifice_pressed():
+func _on_sacrifice_button_pressed() -> void:
 	$Panel3.visible = false
 	$Panel4.visible = false
 	$Choose.visible = true
@@ -35,17 +36,18 @@ func _on_sacrifice_pressed():
 	$BalancePanel.visible = true
 	$ControlPanel.visible = true
 
+
 # Eyesight sacrifice button
 func _on_eyesight_button_pressed():
-	GameManager.apply_sacrifice("Eyesight")
+	GameManager.eyesight_darkness = 0.5  # 30% darker forever
 	get_tree().change_scene_to_file("res://Levels/Level2.tscn")
 
 # Balance sacrifice button (optional)
 func _on_balance_button_pressed():
-	GameManager.apply_sacrifice("Balance")
+	GameManager.balance_sacrificed = true
 	get_tree().change_scene_to_file("res://Levels/Level2.tscn")
 
 # Control sacrifice button (optional)
 func _on_control_button_pressed():
-	GameManager.apply_sacrifice("Control")
+	GameManager.control_sacrificed = true
 	get_tree().change_scene_to_file("res://Levels/Level2.tscn")

@@ -278,3 +278,6 @@ text = "Choose What To Sacrifice"
 stream = ExtResource("2_mpw33")
 
 [connection signal="pressed" from="EyesightPanel/EyesightButton" to="." method="_on_eyesight_button_pressed"]
+[connection signal="pressed" from="BalancePanel/BalanceButton" to="." method="_on_balance_button_pressed"]
+[connection signal="pressed" from="ControlPanel/ControlButton" to="." method="_on_control_button_pressed"]
+[connection signal="pressed" from="Panel4/SacrificeButton" to="." method="_on_sacrifice_button_pressed"]

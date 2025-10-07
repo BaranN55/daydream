@@ -1,10 +1,7 @@
 extends Node2D
 
-@onready var overlay: ColorRect = $EyesightOverlay
+@onready var overlay: ColorRect = $Player/EyesightOverlay
 
 func _ready():
-	if GameManager.has_sacrifice("Eyesight"):
-		overlay.visible = true
-		overlay.update_eyesight()
-	else:
-		overlay.visible = false
+	var darkness = GameManager.eyesight_darkness
+	overlay.color = Color(0, 0, 0, darkness)
