@@ -124,7 +124,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
-size = Vector2(106, 285)
+size = Vector2(106, 261.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 2
@@ -135,9 +135,9 @@ script = ExtResource("1_44cfe")
 position = Vector2(39.61734, -22.354746)
 scale = Vector2(2.1339135, 1.9650528)
 sprite_frames = SubResource("SpriteFrames_h4qhm")
-animation = &"SwordLeft"
+animation = &"Flipped Idle"
 autoplay = "Normal Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(78, -19)
+position = Vector2(78, -30.75)
 shape = SubResource("RectangleShape2D_dewec")

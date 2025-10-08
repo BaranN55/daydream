@@ -30,7 +30,7 @@ func show_intro():
 	$Panel4.visible = true
 
 func _on_sacrifice_button_pressed() -> void:
-	if GameManager.eyesight_darkness == 0:
+	if GameManager.eyesight_sacrificed == true:
 		$EyesightPanel.visible = true
 	else:
 		$Size.visible = true
