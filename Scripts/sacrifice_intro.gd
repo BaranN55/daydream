@@ -39,7 +39,8 @@ func _on_sacrifice_button_pressed() -> void:
 
 # Eyesight sacrifice button
 func _on_eyesight_button_pressed():
-	GameManager.eyesight_darkness = 0.65  # 30% darker forever
+	GameManager.eyesight_sacrificed = true
+	GameManager.eyesight_darkness = 0.7  # 30% darker forever
 	get_tree().change_scene_to_file("res://Levels/Level2.tscn")
 
 # Balance sacrifice button (optional)
