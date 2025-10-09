@@ -143,12 +143,12 @@ position = Vector2(0.125, 35.125)
 shape = SubResource("RectangleShape2D_dewec")
 
 [node name="LeftWallCheck" type="RayCast2D" parent="."]
-position = Vector2(-40, -55)
+position = Vector2(-38, 121)
 target_position = Vector2(-17, 0)
 collision_mask = 4
 collide_with_areas = true
 
 [node name="RightWallCheck" type="RayCast2D" parent="."]
-position = Vector2(53, -54)
+position = Vector2(53, 123)
 target_position = Vector2(10, 0)
 collision_mask = 4
