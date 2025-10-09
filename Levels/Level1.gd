@@ -6,10 +6,8 @@ extends Node2D
 
 func _ready():
 	GameManager.level = 1
-	if dead1g == false:
-		audio.play()
-	else:
-		pass
+	audio.play()
+	
 # Called when hazard area is touched
 func _on_Hazard_body_entered(body):
 	if body.is_in_group("Player"):
