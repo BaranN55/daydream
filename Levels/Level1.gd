@@ -3,7 +3,6 @@ extends Node2D
 @onready var player = $Player
 @onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 @onready var dead1g = GameManager.dead1
-@onready var dead_audio: AudioStreamPlayer = $DeadAudio
 
 func _ready():
 	GameManager.level = 1

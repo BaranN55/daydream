@@ -124,20 +124,31 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
-size = Vector2(106, 261.5)
+size = Vector2(109.75, 182.25)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 3
+collision_mask = 7
 script = ExtResource("1_44cfe")
 
 [node name="Player" type="AnimatedSprite2D" parent="." groups=["Player"]]
-position = Vector2(39.61734, -22.354746)
-scale = Vector2(2.1339135, 1.9650528)
+position = Vector2(-22, 40)
+scale = Vector2(1.4750901, 1.358364)
 sprite_frames = SubResource("SpriteFrames_h4qhm")
 animation = &"Flipped Idle"
 autoplay = "Normal Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(78, -30.75)
+position = Vector2(0.125, 35.125)
 shape = SubResource("RectangleShape2D_dewec")
+
+[node name="LeftWallCheck" type="RayCast2D" parent="."]
+position = Vector2(-40, -55)
+target_position = Vector2(-17, 0)
+collision_mask = 4
+collide_with_areas = true
+
+[node name="RightWallCheck" type="RayCast2D" parent="."]
+position = Vector2(53, -54)
+target_position = Vector2(10, 0)
+collision_mask = 4
