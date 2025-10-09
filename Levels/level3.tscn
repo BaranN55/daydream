@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://hucgoh1gypcn"]
 
 [ext_resource type="Texture2D" uid="uid://4g5a1ng8fidd" path="res://assets/tile_sheet_128px_by_128px.png" id="1_hy5j1"]
-[ext_resource type="Script" uid="uid://d0f8bsuqwvp7g" path="res://Levels/level_3.gd" id="1_xxxi4"]
+[ext_resource type="Script" path="res://Levels/level_3.gd" id="1_xxxi4"]
 [ext_resource type="Texture2D" uid="uid://rywgwrnnpel2" path="res://assets/tile_sheet_128px_by_128px (1).png" id="2_xxxi4"]
 [ext_resource type="Texture2D" uid="uid://b7juanghq5mnb" path="res://assets/Edited 2 (49).png" id="3_4c4gq"]
 [ext_resource type="PackedScene" uid="uid://cugbu4w0rbbx5" path="res://platform.tscn" id="4_3e7p2"]
@@ -280,6 +280,21 @@ _data = {
 &"RESET": SubResource("Animation_m3ha0")
 }
 
+[sub_resource type="Animation" id="Animation_ls4d1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9129, -874)]
+}
+
 [sub_resource type="Animation" id="Animation_k0lmg"]
 resource_name = "up-down"
 length = 5.0
@@ -295,21 +310,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(9129, -874), Vector2(9158, -1364), Vector2(9158, -1712)]
-}
-
-[sub_resource type="Animation" id="Animation_ls4d1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(9129, -874)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_31k36"]
@@ -427,7 +427,6 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Player" groups=["MainCamera"]]
 position = Vector2(78, -32)
-zoom = Vector2(1.3, 1.3)
 limit_left = 600
 limit_right = 19980
 limit_bottom = 880
