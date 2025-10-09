@@ -1,8 +1,14 @@
 extends CharacterBody2D
 
+<<<<<<< Updated upstream
 const SPEED = 725.0
 const JUMP_VELOCITY = -650.0
 const CLIMB_SPEED = 400.0
+=======
+const SPEED = 750.0
+const JUMP_VELOCITY = -650.0
+const CLIMB_SPEED = 570.0
+>>>>>>> Stashed changes
 const WALL_SLIDE_SPEED = 300.0
 const WALL_JUMP_FORCE = Vector2(400, -550)
 
@@ -83,7 +89,7 @@ func _physics_process(delta: float) -> void:
 			velocity.y = WALL_SLIDE_SPEED
 	
 	# Climb up when pressing up or W
-		if Input.is_action_pressed("ui_up") or Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_SPACE):
+		if Input.is_action_pressed("ui_up") or Input.is_key_pressed(KEY_J):
 			is_climbing = true
 			velocity.y = -CLIMB_SPEED
 		else:
