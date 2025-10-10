@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cugbu4w0rbbx5" path="res://platform.tscn" id="9_5g41i"]
 [ext_resource type="AudioStream" uid="uid://cx5ekd5h7xy1q" path="res://Sounds/SoundTrack2.mp3" id="10_7fl83"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dl8mf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fl83"]
 texture = ExtResource("2_fesm6")
 separation = Vector2i(8, 8)
 texture_region_size = Vector2i(120, 120)
@@ -52,7 +52,7 @@ use_texture_padding = false
 2:4/0 = 0
 2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xcayt"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p5226"]
 texture = ExtResource("3_dl8mf")
 separation = Vector2i(8, 8)
 texture_region_size = Vector2i(120, 120)
@@ -120,8 +120,8 @@ texture_region_size = Vector2i(120, 120)
 tile_size = Vector2i(120, 120)
 physics_layer_0/collision_layer = 5
 physics_layer_0/collision_mask = 5
-sources/0 = SubResource("TileSetAtlasSource_dl8mf")
-sources/1 = SubResource("TileSetAtlasSource_xcayt")
+sources/0 = SubResource("TileSetAtlasSource_7fl83")
+sources/1 = SubResource("TileSetAtlasSource_p5226")
 
 [sub_resource type="Animation" id="Animation_7fl83"]
 resource_name = "Move"
@@ -263,14 +263,14 @@ libraries = {
 autoplay = "Move"
 
 [node name="Label5" type="Label" parent="."]
-offset_left = 10789.0
-offset_top = 192.0
-offset_right = 11272.0
-offset_bottom = 325.0
+offset_left = 10742.0
+offset_top = 233.0
+offset_right = 11415.0
+offset_bottom = 366.0
 theme_override_fonts/font = ExtResource("4_1dx0g")
 theme_override_font_sizes/font_size = 60
-text = "Press and Hold J
-to climb walls"
+text = "Press and Hold W 
+or spacebar to climb walls"
 horizontal_alignment = 1
 
 [node name="Label6" type="Label" parent="."]

@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b1a2exggvbkey" path="res://Scripts/killzone.gd" id="1_3brf5"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3brf5"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3brf5"]
+size = Vector2(53, 54)
 
 [node name="Killzone" type="Area2D"]
 collision_layer = 3
@@ -14,7 +15,8 @@ wait_time = 0.67
 one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("WorldBoundaryShape2D_3brf5")
+position = Vector2(1.5, 17)
+shape = SubResource("RectangleShape2D_3brf5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

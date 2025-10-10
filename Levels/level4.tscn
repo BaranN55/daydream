@@ -1,6 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://c6u3pu5i8faa4"]
+[gd_scene load_steps=22 format=3 uid="uid://jbidr21kuvg6"]
 
-[ext_resource type="Script" uid="uid://d0f8bsuqwvp7g" path="res://Levels/level_3.gd" id="1_f4ugn"]
+[ext_resource type="Script" uid="uid://bkwcbrki38okd" path="res://Levels/level_4.gd" id="1_f4ugn"]
 [ext_resource type="Texture2D" uid="uid://4g5a1ng8fidd" path="res://assets/tile_sheet_128px_by_128px.png" id="2_k2rgy"]
 [ext_resource type="Texture2D" uid="uid://rywgwrnnpel2" path="res://assets/tile_sheet_128px_by_128px (1).png" id="3_cipbp"]
 [ext_resource type="Texture2D" uid="uid://b7juanghq5mnb" path="res://assets/Edited 2 (49).png" id="4_gmfd4"]
@@ -238,6 +238,7 @@ texture_region_size = Vector2i(120, 120)
 [sub_resource type="TileSet" id="TileSet_mhpgx"]
 tile_size = Vector2i(120, 120)
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_povm2")
 sources/2 = SubResource("TileSetAtlasSource_i5kxt")
 sources/1 = SubResource("TileSetAtlasSource_6gg2j")
@@ -280,7 +281,7 @@ _data = {
 &"RESET": SubResource("Animation_m3ha0")
 }
 
-[node name="Level3" type="Node2D"]
+[node name="Level4" type="Node2D"]
 script = ExtResource("1_f4ugn")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -346,7 +347,8 @@ format = 2
 layer_0/name = "Mid"
 
 [node name="Killzone" parent="." instance=ExtResource("8_k21a8")]
-position = Vector2(13002, -950)
+position = Vector2(13002, -979)
+collision_layer = 2
 
 [node name="Killzone2" parent="." instance=ExtResource("9_enj4k")]
 position = Vector2(13887, 232)
