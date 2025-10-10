@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://buegcxlxet8p3"]
+[gd_scene load_steps=17 format=3 uid="uid://buegcxlxet8p3"]
 
 [ext_resource type="Script" uid="uid://bonseqod31lrh" path="res://Levels/Level1.gd" id="1_70ly6"]
 [ext_resource type="Texture2D" uid="uid://4g5a1ng8fidd" path="res://assets/tile_sheet_128px_by_128px.png" id="2_fesm6"]
@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://dlmsljicm10g5" path="res://Sounds/IntroAudio.mp3" id="7_fesm6"]
 [ext_resource type="PackedScene" uid="uid://dqgvg7ek30774" path="res://killzone.tscn" id="8_xcayt"]
 [ext_resource type="PackedScene" uid="uid://cugbu4w0rbbx5" path="res://platform.tscn" id="9_5g41i"]
+[ext_resource type="AudioStream" uid="uid://cx5ekd5h7xy1q" path="res://Sounds/SoundTrack2.mp3" id="10_7fl83"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dl8mf"]
 texture = ExtResource("2_fesm6")
@@ -293,3 +294,7 @@ theme_override_font_sizes/font_size = 60
 text = "Jump from one
 to another"
 horizontal_alignment = 1
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_7fl83")
+autoplay = true

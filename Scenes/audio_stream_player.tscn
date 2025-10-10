@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dlp8pik1klbi"]
 
-[ext_resource type="AudioStream" uid="uid://cp8uiatv73h22" path="res://assets/Mecha Raccoon Theme.mp3" id="1_g84o6"]
+[ext_resource type="AudioStream" uid="uid://cp8uiatv73h22" path="res://Sounds/SoundTrack1.mp3" id="1_g84o6"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_g84o6")
